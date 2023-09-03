@@ -29,10 +29,9 @@ document.getElementById('calculateButton').addEventListener('click',function(){
     const months = Math.floor((timeDifference % millisecondsInYear) / millisecondsInMonth);
     const days = Math.floor(((timeDifference % millisecondsInYear) % millisecondsInMonth) / millisecondsInDay);
     
-    // div.innerHTML = `Hello ! <br>
-    // Your age is:  years,  months, days`
-    div.innerHTML = `  <h1 class="text-xl">Hello <span class="bg-success rounded px-2 text-white ">${name}!</span></h1>
-    <h1 class="mt-3">Your Age : <span class="text-3xl">${years}</span> years <span class="text-3xl">${months}</span> months <span class="text-3xl">${days}</span> days</h1>`
+
+    div.innerHTML = ` <h1 class="text-xl font-semibold">Hello<span class="rounded text-2xl px-2 font-bold text-[#3498db]">${name}!</span></h1>
+    <h1 class="mt-3 font-semibold">Your Age : <span class="text-3xl font-bold text-[#3498db]">${years}</span> years <span class="text-3xl font-bold text-[#3498db]">${months}</span> months <span class="text-3xl font-bold text-[#3498db]">${days}</span> days</h1>`
     DisplayContent.appendChild(div)
     nameField.value = ''
     }
